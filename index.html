@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMFTI</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="assets/js/prevent-fouc.js"></script>
+
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/pages/home.css" />
 </head>
+
 <body>
-    
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">BM FTI UNTAR</a>
+
+        <nav class="navbar__menu" aria-label="Navigasi utama">
+            <a href="index.html" class="active">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#departemen">Departemen</a>
+            <a href="#program-kerja">Program Kerja</a>
+        </nav>
+
+        <div class="navbar__actions">
+            <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
+            <button id="theme-toggle" aria-label="Ubah tema (gelap/terang)">🌓</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero__content">
+            <h1 class="hero__title">BM FTI UNTAR</h1>
+            <p class="hero__tagline">ONE TEAM, ONE DREAM</p>
+        </div>
+    </section>
+
+
+    <main>
+        <section id="tentang"></section>
+        <section id="departemen"></section>
+        <section id="program-kerja"></section>
+        <section id="kontak"></section>
+    </main>
+
+    <footer style="text-align:center;padding:48px 16px;color:var(--text-muted);">
+        © 2025 BM FTI UNTAR
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
 </body>
+
 </html>
