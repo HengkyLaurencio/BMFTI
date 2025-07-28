@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMFTI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="assets/js/prevent-fouc.js"></script>
+
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/departemen.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">BM FTI UNTAR</a>
+
+        <nav class="navbar__menu" aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="departemen.html" class="active">Departemen</a>
+            <a href="#program-kerja">Program Kerja</a>
+        </nav>
+
+        <div class="navbar__actions">
+            <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
+            <button id="theme-toggle" aria-label="Ubah tema (gelap/terang)">🌓</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Departemen Section -->
+        <section id="departemen" class="section">
+            <h2>Departemen</h2>
+            <p>Departemen-departemen di BM FTI UNTAR bertugas menjalankan fungsi spesifik untuk mendukung visi dan misi
+                organisasi.</p>
+
+        </section>
+
+        <div id="departemen-container"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column footer__info">
+                <h3>BM FTI UNTAR</h3>
+                <p>Ruang Sekretariat, Gedung R Lt. 7, Universitas Tarumanagara</p>
+            </div>
+            <div class="footer__column footer__social">
+                <h3>Media Sosial</h3>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                    <li><a href="https://discord.com" target="_blank">Discord</a></li>
+                    <li><a href="mailto:bmfti@untar.ac.id">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2025 BM FTI UNTAR</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
+    <script type="module" src="assets/js/load-departemen.js"></script>
+</body>
+
+</html>
