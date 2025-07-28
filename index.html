@@ -26,7 +26,7 @@
 
         <nav class="navbar__menu" aria-label="Navigasi utama">
             <a href="index.html" class="active">Beranda</a>
-            <a href="#tentang">Tentang</a>
+            <a href="tentang.html">Tentang</a>
             <a href="#departemen">Departemen</a>
             <a href="#program-kerja">Program Kerja</a>
         </nav>
@@ -37,23 +37,39 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero__content">
-            <h1 class="hero__title">BM FTI UNTAR</h1>
-            <p class="hero__tagline">ONE TEAM, ONE DREAM</p>
-        </div>
-    </section>
-
-
     <main>
-        <section id="tentang"></section>
-        <section id="departemen"></section>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <h1 class="hero__title">BM FTI UNTAR</h1>
+                <p class="hero__tagline">ONE TEAM, ONE DREAM</p>
+            </div>
+        </section>
+
+        <section id="tentang" class="tentang">
+            <div class="tentang__container">
+                <div class="tentang__text">
+                    <h2 class="tentang__title">Tentang BM FTI</h2>
+                    <p class="tentang__description">
+                        BM FTI UNTAR adalah Lembaga di tingkat fakultas, Fakultas Teknologi Informasi Universitas Tarumanagara, 
+                        yang bertujuan untuk mendukung pengembangan mahasiswa melalui berbagai program kerja dan kegiatan.
+                    </p>
+                    <a href="tentang.html" class="btn btn-primary">Lebih Lanjut</a>
+                </div>
+                <div class="tentang__image">
+                    <img src="assets/img/hero/home.png" alt="Tentang BM FTI" />
+                </div>
+            </div>
+        </section>
+
         <section id="program-kerja"></section>
+
+        <section id="departemen"></section>
+        
         <section id="kontak"></section>
     </main>
 
-    <footer style="text-align:center;padding:48px 16px;color:var(--text-muted);">
+    <footer class="footer">
         © 2025 BM FTI UNTAR
     </footer>
 

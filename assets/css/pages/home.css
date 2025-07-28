@@ -50,3 +50,47 @@
   text-transform: uppercase;
   color: var(--text-muted);
 }
+
+.tentang {
+  padding: 64px 16px;
+  background: var(--bg);
+}
+
+.tentang__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tentang__text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tentang__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.tentang__description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.tentang__image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.tentang__image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

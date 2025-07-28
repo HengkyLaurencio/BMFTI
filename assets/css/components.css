@@ -111,3 +111,10 @@
     height: 36px;
   }
 }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--text-muted);
+}
