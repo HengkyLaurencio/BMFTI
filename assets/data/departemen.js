@@ -16,7 +16,7 @@ const departemen = [
         kadep: { nama: "Samuel Supardjo", foto: "assets/img/anggota/Samuel.jpg" },
         wakadep: { nama: "William Saputra", foto: "assets/img/anggota/William.jpg" },
         anggota: [
-            { nama: "Kimberly Brigitte Kohdong", foto: "assets/img/anggota/Kimberly.jpg" },
+            { nama: "Kimberly Brigitte K.", foto: "assets/img/anggota/Kimberly.jpg" },
             { nama: "Angel Fransisca Wijaya", foto: "assets/img/anggota/Angel.jpg" },
             { nama: "Filza Ardika", foto: "assets/img/anggota/Filza.jpg" }
         ]
@@ -25,7 +25,7 @@ const departemen = [
         nama: "Kesekretariatan",
         deskripsi: "Departemen yang menangani dokumentasi, arsip, dan administrasi.",
         kadep: { nama: "Metta Levina", foto: "assets/img/anggota/Metta.jpg" },
-        wakadep: { nama: "Maria Melisa Herdwinanto", foto: "assets/img/anggota/Maria.jpg" },
+        wakadep: { nama: "Maria Melisa H.", foto: "assets/img/anggota/Maria.jpg" },
         anggota: [
             { nama: "Veren Thiovanda", foto: "assets/img/anggota/Veren.jpg" },
             { nama: "Louis Francis Tali", foto: "assets/img/anggota/Louis.jpg" },
@@ -36,7 +36,7 @@ const departemen = [
         nama: "Keuangan dan Kerjasama",
         deskripsi: "Departemen yang mengelola anggaran dan menjalin kerja sama eksternal.",
         kadep: { nama: "Richwill Ronaldy", foto: "assets/img/anggota/Richwill.jpg" },
-        wakadep: { nama: "Raymond Euginio Kent Sanjaya", foto: "assets/img/anggota/Raymond.jpg" },
+        wakadep: { nama: "Raymond Euginio K. S.", foto: "assets/img/anggota/Raymond.jpg" },
         anggota: [
             { nama: "Eilleen", foto: "assets/img/anggota/Eilleen.jpg" },
             { nama: "Stiven", foto: "assets/img/anggota/Stiven.jpg" }
@@ -70,8 +70,8 @@ const departemen = [
         wakadep: { nama: "Brian", foto: "assets/img/anggota/Brian.jpg" },
         anggota: [
             { nama: "Michael Chan", foto: "assets/img/anggota/Michael.jpg" },
-            { nama: "Felix Jonathan", foto: "assets/img/anggota/Felix.jpg" },
-            { nama: "Brian Joe Lyon", foto: "assets/img/anggota/Brian Joe.jpg" }
+            { nama: "Felix Jonathan", foto: "assets/img/anggota/Felix J.jpg" },
+            { nama: "Brian Joe Lyon", foto: "assets/img/anggota/Brian J.jpg" }
         ]
     },
     {

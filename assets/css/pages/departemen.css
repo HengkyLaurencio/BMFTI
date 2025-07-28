@@ -29,10 +29,10 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   width: 200px;
-  height: 300px;
+  height: 320px; /* Increased height to accommodate content */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Adjusted alignment */
   align-items: center;
   padding: 16px;
   text-align: center;
@@ -47,21 +47,30 @@
 
 .card__image {
   width: 100%;
-  height: 140px;
+  aspect-ratio: 3 / 4;
+  max-height: 180px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
 .card__name {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 8px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: visible;
+  white-space: normal;
 }
 
 .card__role {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
+  text-align: center;
+  word-wrap: break-word; 
+  overflow: visible; 
+  white-space: normal;
 }
 
 @media (max-width: 768px) {
