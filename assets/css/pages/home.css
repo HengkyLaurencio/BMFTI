@@ -94,3 +94,80 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.program-kerja {
+  padding: 64px 16px;
+  background: var(--bg-light);
+}
+
+.program-kerja__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.program-kerja__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.program-kerja__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.program-kerja__item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: left;
+}
+
+.program-kerja__image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.program-kerja__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.program-kerja__theme {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.program-kerja__description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.program-kerja__more {
+  /* display: inline-block; */
+  margin-top: 32px;
+  /* padding: 12px 24px; */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: var(--bg);
+  transition: 150ms ease;
+}
+
+.program-kerja__more:hover {
+  filter: brightness(1.1);
+}
