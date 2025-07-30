@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/pages/home.css" />
+    <link rel="stylesheet" href="assets/css/pages/tentang.css" />
 </head>
 
 <body>
@@ -27,34 +27,101 @@
         <nav class="navbar__menu" aria-label="Navigasi utama">
             <a href="index.html">Beranda</a>
             <a href="tentang.html" class="active">Tentang</a>
-            <a href="#departemen">Departemen</a>
+            <a href="departemen.html">Departemen</a>
             <a href="#program-kerja">Program Kerja</a>
         </nav>
 
         <div class="navbar__actions">
-            <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
+            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
             <button id="theme-toggle" aria-label="Ubah tema (gelap/terang)">🌓</button>
         </div>
     </header>
 
     <main>
-        <section class="tentang-detail">
-            <h1>Tentang BM FTI UNTAR</h1>
-            <p>
-                BM FTI UNTAR adalah Lembaga Eksekutif di tingkat fakultas, Fakultas Teknologi Informasi Universitas
-                Tarumanagara.
-                Kami berkomitmen untuk mendukung pengembangan mahasiswa melalui berbagai program kerja, kegiatan, dan
-                kolaborasi
-                yang bertujuan untuk meningkatkan kualitas akademik, organisasi, dan sosial mahasiswa.
+        <!-- Hero Section -->
+        <section class="tentang-hero">
+            <div class="tentang-hero__content">
+                <h1 class="tentang-hero__title">Tentang BM FTI UNTAR</h1>
+                <p class="tentang-hero__subtitle">
+                    Lembaga mahasiswa tingkat fakultas yang berkomitmen mengembangkan potensi
+                    mahasiswa Fakultas Teknologi Informasi Universitas Tarumanagara
+                </p>
+                <div class="tentang-hero__tagline">ONE TEAM, ONE DREAM</div>
+            </div>
+        </section>
+
+        <div class="tentang-content">
+            <!-- Sejarah Section -->
+            <section class="tentang-section sejarah">
+                <div class="section-header">
+                    <h2 class="section-title">Sejarah Singkat</h2>
+                    <p class="section-subtitle">
+                        Perjalanan BM FTI UNTAR dalam mengembangkan mahasiswa teknologi informasi
+                    </p>
+                </div>
+                <div class="sejarah-content">
+                    <div class="sejarah-text">
+                        <p>
+                            <strong>Badan Mahasiswa Fakultas Teknologi Informasi (BM FTI) UNTAR</strong>
+                            didirikan sebagai wadah aspirasi dan pengembangan mahasiswa di lingkungan
+                            Fakultas Teknologi Informasi Universitas Tarumanagara.
+                        </p>
+                        <p>
+                            Sebagai lembaga kemahasiswaan tingkat fakultas, BM FTI UNTAR berperan
+                            sebagai jembatan komunikasi antara mahasiswa dengan pihak fakultas dan
+                            universitas. Kami berkomitmen untuk menciptakan lingkungan akademik yang
+                            kondusif dan mendukung pengembangan soft skill mahasiswa.
+                        </p>
+                        <p>
+                            Dengan semangat <em>"One Team, One Dream"</em>, BM FTI UNTAR terus
+                            berinovasi dalam menghadirkan program-program yang bermanfaat bagi
+                            seluruh civitas akademika FTI UNTAR.
+                        </p>
+                    </div>
+                    <div class="sejarah-image">
+                        <img src="assets/img/home/hero.png" alt="Gedung FTI UNTAR" />
+                    </div>
+                </div>
+            </section>        
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2 class="cta-title">Bergabung Bersama Kami</h2>
+            <p class="cta-text">
+                Jadilah bagian dari keluarga besar BM FTI UNTAR dan wujudkan potensi terbaikmu.
+                Bersama-sama kita membangun masa depan teknologi informasi yang lebih baik.
             </p>
+            <a href="pendaftaran.html" class="btn btn-primary">Daftar Sekarang</a>
         </section>
     </main>
 
     <footer class="footer">
-        © 2025 BM FTI UNTAR
+        <div class="footer__container">
+            <div class="footer__column footer__info">
+                <h3>BM FTI UNTAR</h3>
+                <p>Ruang Sekretariat, Gedung R Lt. 7, Universitas Tarumanagara</p>
+            </div>
+            <div class="footer__column footer__social">
+                <h3>Media Sosial</h3>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                    <li><a href="https://discord.com" target="_blank">Discord</a></li>
+                    <li><a href="mailto:bmfti@untar.ac.id">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2025 BM FTI UNTAR</p>
+        </div>
     </footer>
 
     <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/mobile-menu.js"></script>
 </body>
 
 </html>
