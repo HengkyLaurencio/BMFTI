@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMFTI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="assets/js/prevent-fouc.js"></script>
+
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages/pendaftaran.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">BM FTI UNTAR</a>
+
+        <nav class="navbar__menu" aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="departemen.html">Departemen</a>
+            <a href="#program-kerja">Program Kerja</a>
+        </nav>
+
+        <div class="navbar__actions">
+            <a href="pendaftaran.html" class="btn btn-primary">Pendaftaran</a>
+            <button id="theme-toggle" aria-label="Ubah tema (gelap/terang)">🌓</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pendaftaran">
+            <div class="pendaftaran__container">
+                <div class="pendaftaran__header">
+                    <h1 class="pendaftaran__title">Pendaftaran Anggota</h1>
+                    <p class="pendaftaran__subtitle">
+                        Bergabunglah dengan BM FTI UNTAR dan wujudkan potensi terbaikmu bersama kami
+                    </p>
+                </div>
+
+                <form class="pendaftaran__form" id="registrationForm" novalidate>
+                    <div class="form-group">
+                        <label for="namaLengkap" class="form-label form-label--required">Nama Lengkap</label>
+                        <input type="text" id="namaLengkap" name="namaLengkap" class="form-input"
+                            placeholder="Masukkan nama lengkap Anda" required autocomplete="name">
+                        <div class="form-error">Nama lengkap wajib diisi</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label form-label--required">Email</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                            placeholder="contoh@student.untar.ac.id" required autocomplete="email">
+                        <div class="form-error">Email harus valid dan wajib diisi</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim" class="form-label form-label--required">NIM (Nomor Induk Mahasiswa)</label>
+                        <input type="text" id="nim" name="nim" class="form-input" placeholder="Contoh: 535220001"
+                            required pattern="[0-9]{9}" maxlength="9" autocomplete="off">
+                        <div class="form-error">NIM harus terdiri dari 9 digit angka</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="programStudi" class="form-label form-label--required">Program Studi</label>
+                        <select id="programStudi" name="programStudi" class="form-select" required>
+                            <option value="">Pilih Program Studi</option>
+                            <option value="teknik-informatika">Teknik Informatika</option>
+                            <option value="sistem-informasi">Sistem Informasi</option>
+                        </select>
+                        <div class="form-error">Program studi wajib dipilih</div>
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        Daftar Sekarang
+                    </button>
+                </form>
+
+                <div class="form-info">
+                    <p class="form-info__text">
+                        <strong>Catatan:</strong> Pastikan data yang Anda masukkan sudah benar.
+                        Setelah pendaftaran berhasil, tim kami akan menghubungi Anda melalui email
+                        untuk tahap selanjutnya.
+                    </p>
+                </div>
+
+                
+            </div>
+            <div class="pendaftaran__success" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h2 class="success-title">Pendaftaran Berhasil!</h2>
+                <p class="success-message">
+                    Terima kasih telah mendaftar sebagai anggota BM FTI UNTAR.
+                    Kami akan menghubungi Anda melalui email dalam 1-2 hari kerja.
+                </p>
+                <div class="success-actions">
+                    <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
+                    <button onclick="resetForm()" class="btn btn-ghost">Daftar Lagi</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column footer__info">
+                <h3>BM FTI UNTAR</h3>
+                <p>Ruang Sekretariat, Gedung R Lt. 7, Universitas Tarumanagara</p>
+            </div>
+            <div class="footer__column footer__social">
+                <h3>Media Sosial</h3>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                    <li><a href="https://discord.com" target="_blank">Discord</a></li>
+                    <li><a href="mailto:bmfti@untar.ac.id">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2025 BM FTI UNTAR</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/pendaftaran.js"></script>
+</body>
+
+</html>
