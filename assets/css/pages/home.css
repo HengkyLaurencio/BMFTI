@@ -171,24 +171,6 @@
   color: var(--text-muted);
 }
 
-.program-kerja__more {
-  margin-top: clamp(24px, 4vw, 32px);
-  padding: clamp(12px, 2vw, 16px) clamp(20px, 4vw, 24px);
-  font-size: clamp(0.9rem, 2.2vw, 1rem);
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  background: var(--primary);
-  color: var(--bg);
-  transition: 150ms ease;
-  display: inline-block;
-}
-
-.program-kerja__more:hover {
-  filter: brightness(1.1);
-  transform: translateY(-2px);
-}
-
 /* Mobile specific adjustments */
 @media (max-width: 768px) {
   .hero {
